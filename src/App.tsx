@@ -100,7 +100,7 @@ function App() {
   // WS
 
   //@ts-ignore
-  const connectionAddress = 'ws://localhost:11012' // TODO import.meta.env.PROD ? 'wss://event-relay.nectar.cash' :
+  const connectionAddress = import.meta.env.PROD ? 'wss://api.nectar.cash' : 'ws://localhost:11012'
   const connectionURL = isConnected ? `${connectionAddress}/follow?address=${userAddress!}` : ''
 
   // const [socketUrl, setSocketUrl] = useState(connectionURL)
