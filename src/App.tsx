@@ -165,10 +165,10 @@ function App() {
           }
         }
 
-        msg = msg.replace(/(0x[0-9a-fA-F]{40})/g, (_match, p1) => {
+        msg = msg.replace(/(0x[0-9a-fA-F]{64})/g, (_match, p1) => {
           return `${p1.slice(0, 6)}····${p1.slice(-4)}`
         })
-        msg = msg.replace(/(0x[0-9a-fA-F]{64})/g, (_match, p1) => {
+        msg = msg.replace(/(0x[0-9a-fA-F]{40})/g, (_match, p1) => {
           return `${p1.slice(0, 6)}····${p1.slice(-4)}`
         })
       }
@@ -473,8 +473,8 @@ function App() {
             , where{' '}
             <InlineStatus status={eventReceivedRPCBundlePublished}>it should be published via Flashbots</InlineStatus>.
           </p>
-          <p className="text-sm text-stone-500">
-            It might take a couple of blocks to be included, mev-boost is a lot less used on Goerli vs mainnet.
+          <p className="">
+            It might take many blocks to be included, mev-boost is a lot less used on Goerli vs mainnet.
           </p>
           {userTx !== '' && userTxIncluded && (
             <a
