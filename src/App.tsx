@@ -10,8 +10,8 @@ import './App.css'
 
 import nectarLogo from './assets/logo.svg'
 
-import imageMetamaskSettings from './assets/MetaMaskSettings.png'
-import imageNetworks from './assets/Networks.png'
+// import imageMetamaskSettings from './assets/MetaMaskSettings.png'
+import imageNetworkSwitcher from './assets/NetworkSwitcher.png'
 import imageAddNetwork from './assets/AddNetwork.png'
 import imageAddManually from './assets/AddManually.png'
 import imageNetworkSettings from './assets/NetworkSettings.png'
@@ -245,30 +245,17 @@ function App() {
 
           <ol>
             <li>
-              Go to{' '}
-              <span id="metamask-settings" className="underline underline-offset-4 decoration-dotted cursor-help">
-                MetaMask Settings
+              Open{' '}
+              <span id="network-switcher" className="underline underline-offset-4 decoration-dotted cursor-help">
+                MetaMask network switcher
               </span>
               .
             </li>
             <Tooltip
               noArrow
-              anchorId="metamask-settings"
+              anchorId="network-switcher"
               style={tooltipStyle}
-              html={`<img class="w-60 p-0 m-0 opacity-100" src='${imageMetamaskSettings}' />`}
-            />
-            <li>
-              Go to{' '}
-              <span id="metamask-networks" className="underline underline-offset-4 decoration-dotted cursor-help">
-                Networks
-              </span>
-              .
-            </li>
-            <Tooltip
-              noArrow
-              anchorId="metamask-networks"
-              style={tooltipStyle}
-              html={`<img class="w-60 p-0 m-0 opacity-100" src='${imageNetworks}' />`}
+              html={`<img class="w-60 p-0 m-0 opacity-100" src='${imageNetworkSwitcher}' />`}
             />
             <li>
               Click{' '}
