@@ -232,6 +232,19 @@ function App() {
             your address. You can then withdraw the reward.
           </p>
 
+          <h3>Would rather watch it working?</h3>
+          <p>I’ve recorded the demo, so you don’t have to set anything up to understand how Nectar works.</p>
+          <div className="aspect-w-16 aspect-h-10">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/_M9NJMd-mRg?controls=1&modestbranding=1&rel=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="overflow-clip rounded-2xl shadow-2xl"
+            ></iframe>
+          </div>
+
           <h2 className="mt-8 flex align-middle font-medium text-2xl">
             <span className="block rounded-full shadow-lg bg-orange-600 text-orange-100 h-8 w-8 text-center mr-4">
               1
@@ -576,6 +589,20 @@ function App() {
           <p className="mb-8">
             Thanks for trying out the Nectar demo. For any questions,{' '}
             <a href="https://t.me/lekevicius">message @lekevicius on Telegram</a>.
+          </p>
+
+          <p className="mb-8">
+            Oh, and <strong>don’t forget to sell NTT to get back your GoerliETH!</strong> This will also reset the demo
+            for others.
+          </p>
+
+          <h3>Curious about the tech?</h3>
+          <p>
+            The entire system is open-source. You can check out the code and… deploy a Nectar system yourself? I don’t
+            know, it’s up to you.
+          </p>
+          <p>
+            <a href="https://github.com/orgs/nectar-cash/repositories">Nectar repositories on GitHub</a>
           </p>
         </div>
       </div>
