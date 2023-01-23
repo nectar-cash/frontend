@@ -442,7 +442,7 @@ function App() {
           </h2>
 
           {!isConnected && (
-            <p className="p-4 bg-orange-50 border-orange-600 border-[1px] rounded-lg text-orange-700">
+            <p className="p-4 bg-orange-50 border-orange-300 border-[1px] rounded-lg text-orange-700">
               <strong className="text-orange-800">Your wallet is not connected!</strong> You can only receive events
               about your wallet transactions. Make sure to{' '}
               <a
@@ -458,6 +458,13 @@ function App() {
               now.
             </p>
           )}
+
+          <p className="px-4 -mx-4 py-3 bg-slate-100 rounded-lg text-slate-700 text-sm leading-6">
+            <strong className="text-slate-800">📝 Note:</strong> This is a live demo interfacing with elements of the
+            blockchain that are beyond my control. And live demos <em>always</em> break… Displayed events log you should
+            help you figure out if and why something broke. Otherwise, <a href="https://t.me/lekevicius">message me</a>.
+            Thanks.
+          </p>
 
           <p>
             Here’s what will probably happen on the Nectar system with your transaction: your transaction should be{' '}
